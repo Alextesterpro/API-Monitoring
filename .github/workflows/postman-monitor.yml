@@ -1,27 +1,52 @@
-name: Postman API Tests
+name: Postman API Monitor
 
 on:
+  # Запуск по расписанию (каждые 30 минут)
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: "*/30 * * * *"
+
+  # Возможность ручного запуска из GitHub UI
   workflow_dispatch:
 
 jobs:
-  api-tests:
+  run-postman-collection:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      # 1. Клонируем репозиторий
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Setup Node
+      # 2. Устанавливаем Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: "18"
 
+      # 3. Устанавливаем Newman
       - name: Install Newman
-        run: npm install -g newman newman-reporter-htmlextra
+        run: npm install -g newman
 
+      # 4. (Опционально) Устанавливаем HTML-репортер
+      - name: Install Newman HTML reporter
+        run: npm install -g newman-reporter-htmlextra
+
+      # 5. Запускаем Postman Collection
       - name: Run Postman collection
         run: |
-          newman run "postman/collections/water_transport.postman_collection.json" \
-            -e "postman/environments/use_this_environment.postman_environment.json" \
-            --reporters cli,htmlextra
+          newman run postman/collection.json \
+            -e postman/environment.json \
+            --reporters cli,htmlextra \
+            --reporter-htmlextra-export newman-report.html
+        env:
+          # Пример передачи секретов
+          API_TOKEN: ${{ secrets.API_TOKEN }}
+          BASE_URL: ${{ secrets.BASE_URL }}
+
+      # 6. Сохраняем HTML-отчет как artifact
+      - name: Upload Newman report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newman-report
+          path: newman-report.html
