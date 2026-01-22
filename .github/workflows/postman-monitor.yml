@@ -23,6 +23,6 @@ jobs:
 
       - name: Run Postman collection
         run: |
-          newman run "postman/collections/water_transport.postman_collection.json" \
+          newman run "postman/collections/Водный транспорт.postman_collection.json" \
           -e "postman/environments/use_this_environment.json" \
           --reporters cli
