@@ -1,1 +1,27 @@
+name: Postman API Tests
 
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Newman
+        run: npm install -g newman newman-reporter-htmlextra
+
+      - name: Run Postman collection
+        run: |
+          newman run "postman/collections/water_transport.postman_collection.json" \
+            -e "postman/environments/use_this_environment.postman_environment.json" \
+            --reporters cli,htmlextra
