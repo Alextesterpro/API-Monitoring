@@ -1,0 +1,400 @@
+{
+	"id": "04f87aea-b4fb-455b-8689-84e1a31241f7",
+	"name": "Использовать этот",
+	"values": [
+		{
+			"key": "factor_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "event_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "keyword_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "incident_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "category_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "scenario_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "story_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "incident_type_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "operation_typical_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "trigger_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "worksheet_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "analytic_group_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "analytic_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "metric_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "population_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "mkdtp_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "dtp_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomDate",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "infrastructure_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "infrastructure_type_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "road_network_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "attributes_name",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "parking_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random9",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random7",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "vehicle_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "transport-road_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "brand_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "model_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "vehicle_types_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "color-speed_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "station_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "vehicle_1_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "organization_1_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "congestion-exclude-zone_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "collection-service_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "collection-service-AIS_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "collection-service-FTP_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "collection-service-schedule_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "collection-service-kaffka_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "egts-clone_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "egts-telemetry_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "organization_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "role_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "devices_group_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "camera-ksiv_vo_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "camera-Axxon_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "camera-ISS_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "camera-Go2rts_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "camera-Sokol_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "camera-Netris_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "role-1_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "user_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "external-system_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "incident-metro_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "transport-passenger_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random4",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "classes_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "attributes_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "nodes_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random8",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random10",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random6",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "groups_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-01-22T18:28:54.003Z",
+	"_postman_exported_using": "Postman/11.81.3-260122-0258"
+}
